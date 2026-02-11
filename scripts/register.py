@@ -488,10 +488,11 @@ def cmd_info(args):
         owner = contract.functions.ownerOf(agent_id).call()
         print(f"Owner: {owner}")
     except Exception as e:
-        if "ERC721" in str(e) or "invalid" in str(e).lower():
+        err = str(e)
+        if "ERC721" in err or "invalid" in err.lower() or "0x7e273289" in err:
             print(f"Error: Agent {agent_id} does not exist on {chain}")
         else:
-            print(f"Error: {e}")
+            print(f"Error: {err}")
         sys.exit(1)
 
     # Get URI
