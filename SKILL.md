@@ -1,3 +1,8 @@
+---
+name: ERC-8004 Register
+description: Register AI agents on-chain, update metadata, validate registrations, and auto-fix broken profiles via the ERC-8004 Identity Registry. Supports Base, Ethereum, Polygon, Monad, BNB.
+---
+
 # ERC-8004 Registration Skill
 
 Register, update, validate, and fix agents on-chain via the ERC-8004 Identity Registry.
